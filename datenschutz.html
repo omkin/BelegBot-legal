@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Datenschutzerklärung der BelegBot App – KI-Belegscanner für Selbstständige.">
+  <title>Datenschutz – BelegBot</title>
+  <style>
+    :root {
+      --primary: #5b4fcf;
+      --text: #1a1a2e;
+      --muted: #5c5c6f;
+      --bg: #fafafa;
+      --card: #ffffff;
+      --border: #e8e8ef;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 2rem 1.25rem;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 0.25rem; font-size: 1.75rem; font-weight: 800; }
+    header p { margin: 0; opacity: 0.9; font-size: 0.95rem; }
+    main {
+      max-width: 720px;
+      margin: -1.5rem auto 3rem;
+      padding: 0 1rem;
+    }
+    article {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.75rem 1.5rem;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    }
+    article h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin: 1.5rem 0 0.5rem;
+      color: var(--primary);
+    }
+    article h2:first-of-type { margin-top: 0; }
+    article p, article ul { margin: 0 0 1rem; color: var(--text); }
+    article ul { padding-left: 1.25rem; }
+    article li { margin-bottom: 0.35rem; }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+    footer a { color: var(--primary); }
+    .stand { margin-top: 1.5rem; font-size: 0.9rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BelegBot</h1>
+    <p>Datenschutzerklärung</p>
+  </header>
+
+  <main>
+    <article>
+      <p>
+        Diese Datenschutzerklärung gilt für die mobile App <strong>BelegBot</strong>
+        (Android) und die zugehörigen Online-Dienste.
+      </p>
+
+      <h2>1. Verantwortlicher</h2>
+      <p>
+        BelegBot wird von Eugen Kail betrieben.<br>
+        Kontakt: <a href="mailto:kail.eugen@gmail.com">kail.eugen@gmail.com</a>
+      </p>
+
+      <h2>2. Welche Daten werden verarbeitet?</h2>
+      <ul>
+        <li>E-Mail-Adresse und Passwort bei Registrierung per E-Mail (Firebase Authentication)</li>
+        <li>Bei Anmeldung mit Google: E-Mail-Adresse und Google-Kontokennung (Firebase Authentication)</li>
+        <li>Belegbilder, die du fotografierst oder aus der Galerie wählst (Firebase Storage)</li>
+        <li>Extrahierte Belegdaten: Händler, Datum, Beträge, MwSt, Kategorie, optional Notizen (Cloud Firestore)</li>
+        <li>Beim KI-Scan wird das Belegbild an unsere Cloud Function übermittelt und von OpenAI zur Texterkennung verarbeitet</li>
+      </ul>
+
+      <h2>3. Zweck der Verarbeitung</h2>
+      <p>
+        Die App dient der digitalen Erfassung und Verwaltung von Belegen für Selbstständige.
+        Die KI-Analyse automatisiert die Datenerfassung aus Belegbildern.
+      </p>
+
+      <h2>4. Rechtsgrundlage</h2>
+      <p>
+        Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung) für die Nutzung der App.<br>
+        Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) bei der Registrierung.
+      </p>
+
+      <h2>5. Drittanbieter</h2>
+      <ul>
+        <li><strong>Google Firebase</strong> (Authentifizierung, Datenbank, Dateispeicher) – EU-Region, wo möglich</li>
+        <li><strong>Google Sign-In</strong> – nur bei optionaler Anmeldung mit Google-Konto</li>
+        <li><strong>OpenAI</strong> (KI-Analyse der Belegbilder) – Datenübermittlung in die USA; es wird nur das Belegbild übermittelt, keine Kontodaten</li>
+      </ul>
+      <p>Es werden keine Werbe-Tracker in der App eingesetzt.</p>
+
+      <h2>6. Speicherdauer</h2>
+      <p>
+        Daten werden gespeichert, bis du dein Konto löschst oder einzelne Belege in der App entfernst.
+      </p>
+
+      <h2>7. Deine Rechte</h2>
+      <p>
+        Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung
+        und Datenübertragbarkeit (Art. 15–20 DSGVO).
+      </p>
+      <p>
+        Konto und alle zugehörigen Daten kannst du in den App-Einstellungen unter
+        „Konto löschen“ unwiderruflich entfernen. Für sonstige Anfragen wende dich an die
+        oben genannte Kontakt-E-Mail.
+      </p>
+
+      <h2>8. App-Berechtigungen (Android)</h2>
+      <ul>
+        <li><strong>Kamera</strong> – zum Fotografieren von Belegen</li>
+        <li><strong>Speicher / Galerie</strong> – zum Auswählen vorhandener Belegfotos</li>
+        <li><strong>Internet</strong> – für Anmeldung, Cloud-Speicher und KI-Analyse</li>
+      </ul>
+
+      <p class="stand">Stand: März 2026</p>
+    </article>
+  </main>
+
+  <footer>
+    BelegBot · <a href="mailto:kail.eugen@gmail.com">Kontakt</a>
+  </footer>
+</body>
+</html>
